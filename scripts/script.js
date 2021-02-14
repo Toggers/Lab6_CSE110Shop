@@ -9,7 +9,7 @@ var cartText;
 var count = document.getElementById("cart-count");
 
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('http://fakestoreapi.com/products')
+  fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
       localStorage.setItem("foo", JSON.stringify(data));
